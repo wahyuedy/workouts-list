@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 1), transparent), url("./assets/bg2.jpg");
+  background-size: cover;
+  height: 100vh;
+  /* background-color: #0C0C0C; */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Menyembunyikan scrollbar */
+}
+
+/* Menyembunyikan scrollbar di browser Firefox */
+.WorkoutsDetail {
+  overflow-y: auto; /* Membuat komponen dapat digulir jika konten lebih panjang */
+  max-height: 100vh; /* Ketinggian maksimum untuk komponen digulir */
+  scrollbar-width: none; /* Untuk Firefox */
+}
+
+/* Membuat scrollbar di Firefox tidak terlihat */
+.WorkoutsDetail::-webkit-scrollbar {
+  display: none;
+}
+
+/* Menyembunyikan scrollbar di Internet Explorer dan Edge */
+.WorkoutsDetail {
+  -ms-overflow-style: none;
+}
