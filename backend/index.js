@@ -10,6 +10,12 @@ const port = process.env.PORT;
 
 app.use(express.json());
 
+const corsOptions = {
+  origin: 'https://workouts-list-api.vercel.app/', // Ganti dengan domain Anda
+  methods: ['GET', 'POST', 'PATCH', 'DELETE'], // Atur metode yang diizinkan
+  credentials: true, // Atur header yang diizinkan
+};
+
 app.use(cors())
 
 app.use((req, res, next) => {
