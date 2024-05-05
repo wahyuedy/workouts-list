@@ -28,7 +28,7 @@ export const useLogin = () => {
             dispatch({ type: "LOGIN", payload: json });
             setIsLoading(false);
         } catch (error) {
-            setError("Signup failed");
+            setError("Login failed");
             setIsLoading(false);
         }
     };

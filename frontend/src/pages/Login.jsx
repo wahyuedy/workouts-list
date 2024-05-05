@@ -28,7 +28,9 @@ const Login = () => {
             </label>
             <input type="password" className="input md:w-[500px]" required onChange={(e) => setPassword(e.target.value)} value={password} />
           </div>
-          <div className="form-control mt-6 w-full md:w-[500px]">
+          <p className='text-[#FFC55A] mt-2 font-bold'>Demo Account : wahyu@gmail.com</p>
+          <p className='text-[#FFC55A] font-bold'>Password : ABCabc123!</p>
+          <div className="form-control mt-3 w-full md:w-[500px]">
             <button disabled={isLoading} className="btn bg-[#FFC55A] border-[#FFC55A] hover:bg-black text-black hover:text-white font-bold text-base hover:border-[#FFC55A]">Log In</button>
           </div>
           {error && <div className='text-white flex mt-4 justify-center items-center border-[#FFC55A] border-2 py-2 text-lg md:text-2xl bg-black/75 rounded'>{error}</div>}

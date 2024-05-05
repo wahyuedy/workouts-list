@@ -30,7 +30,7 @@ const WorkoutsDetail = ({ workout, onDelete }) => {
         <div className="card bg-[#FFC55A] mb-4 flex md:flex-row items-start md:items-center justify-center h-full max-h-[145px]">
           <div className="card-body">
             <h2 className="card-title md:text-3xl">{workout.title}</h2>
-            <div className="">
+            <div className="text-black">
               <p>Load (kg):{workout.load}</p>
               <p>Reps:{workout.reps}</p>
               <p>{formatDistanceTonow(new Date(workout.createdAt), { addSuffix: true })}</p>

@@ -32,7 +32,6 @@ const AddWorkout = () => {
           'Authorization': `Bearer ${user.token}`
         }
       });
-      console.log(response.data);
       navigate("/");
     } catch (error) {
       console.log(error);
