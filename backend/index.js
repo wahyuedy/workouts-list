@@ -16,7 +16,7 @@ const corsOptions = {
   credentials: true, // Atur header yang diizinkan
 };
 
-app.use(cors())
+app.use(cors(corsOptions))
 
 app.use((req, res, next) => {
   console.log(req.path, req.method);
